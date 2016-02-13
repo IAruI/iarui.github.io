@@ -34,13 +34,18 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
+                    <a href="../index.html">
 Aryan Agarwal                    </a>
                 </li>
                 
-             
-                <li>
-                    <a href="#">Anything</a>
+             <li onclick="homeAbout()">
+                    <a href="#">Home</a>
+                </li>
+                <li onclick="anythingAbout()">
+                    <a href="#">Experiences</a>
+                </li>
+                 <li onclick="codingAbout()">
+                    <a href="#">Fun Coding Challenge</a>
                 </li>
                 <li>
                  
@@ -53,15 +58,65 @@ Aryan Agarwal                    </a>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
+                    <div id="homeAnything">
                         <h1>Aryan Agarwal                             <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
 </h1> 
                         <p>I am graduating Bangkok Patana School at 2017. I study HL CS, Maths, Physics and SL English Lang/Lit, Spanish and Economics. I love many things, most of my hobbies rely on technology. I consider my self as a coder who has passion for both front end and back end developing. And finally my dream journey in life would be to blitz scale a startup.</code></p>
                         <p>My favourite subject would be Computer Science because it is so flexible andt the feeling of creating something out of nothing is something you may not achieve from any other field. Also it is very independant and can evoke a lot of creativity.</p>
+                        <p>My Git Hub and main project link:                        </p>
+                        <a href="https://github.com/djkhaled-motivator/djkhaled-motivator.github.io">Aryan Motivating Website</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <div id="anythingAnything">
+                        <h1>Aryan Agarwal                             <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+</h1> 
+                        <h2><i>Experiences
+                      </i>  </h2>
+                        <h3>
+                            Go Pomelo Work Experience
+                        </h3>
+                        <p>
+GoPomelo work with companies to transform the way they collaborate, work and engage with customers. We partner with leading technology and develop our own applications in-house. I was there to learn how to both front end and back end develop. We were given the task of re-creating some of the flaws within our school map navigation. Ultimately we evaluated the flaws and created a better page. We used Materialize and Google Maps API to help users navigate the location to our school. We tried our best to make it as efficent as possible, so we used buttons and plugged all functions onto one page to avoid loading delay. It was largely beneficial to my understanding of front end developing. Because of my skills taught there I was able to create this page.
+
+                        </p>
+                        <h3>
+                            MUN
+                        </h3>
+                        <p>
+Model United Nations is one of my favourite things to do outside of school. It is a highly competitive atmosphere. I have been to 4-5 conferences and chaired one conference. I have learnt to callaborate with peers and also learnt to understand the significance of current affairs revolving world politics. I am also about to compete in my first international conference in Singapore in March, it is called SEASAC MUN. The most imporatnt thing I have learnt in MUN is to always consier the other perspective when making an important decision. Because any decision can affect your life in the future. This also ties in with the passion to create a startup because you make an enormous amount of decisions when creating a startup. 
+
+                        </p>
+                        <h3>
+                            Community Service
+                        </h3>
+                        <p>
+One of my greatest passions is to help animals and others who may not be as fortunate as our society. I love the feeling of give back to the community, is a feeling that cannot be described. I have participated for 1 year in playing with under privilaged kids in grade 9, teaching them colouring and some English but overall our aim was to bring hapiness in their lives. I am also helping to raise awareness and funds for the organisation named WFFT, our club is called SOS. Another way I help is to bring the voice of my class in the Student Representitive Council. Right now my favourite passion is to teach English to underprivilaged kids in Bangkok, this is because not only do the kids learn English but also I learn from the kids. I have learnt to be myself and to always be learning even if you think you know everything. My best experience was when a girl finished our worksheets within seconds but after knowing everything she practised more, when we asked her if she thought it was easy she said "There is no harm in triyng to perfect".
+
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<div id="codeChallengeComing">
+<h1>Coming Soon!
+</h1>
+</div>
+
+
 
     </div>
     <!-- /#wrapper -->
@@ -78,6 +133,38 @@ Aryan Agarwal                    </a>
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+    </script>
+    <script>
+    function anythingAbout(){
+            document.getElementById('homeAnything').style.display = 'none';
+                        document.getElementById('anythingAnything').style.display = 'block';
+
+
+    }
+    function homeAbout(){
+            document.getElementById('homeAnything').style.display = 'block';
+                                    document.getElementById('anythingAnything').style.display = 'none';
+
+
+    }
+
+    function yourfunction() {
+                    document.getElementById('anythingAnything').style.display = 'none';
+                                                            document.getElementById('codeChallengeComing').style.display = 'none';
+
+
+                } window.onload = yourfunction;
+
+
+    </script>
+    <script>
+    function codingAbout(){
+                    document.getElementById('homeAnything').style.display = 'none';
+                                        document.getElementById('anythingAnything').style.display = 'none';
+                                        document.getElementById('codeChallengeComing').style.display = 'block';
+
+
+    }
     </script>
 
 </body>
